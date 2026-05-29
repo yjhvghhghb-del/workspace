@@ -1,0 +1,10 @@
+# Sensitive files - DO NOT PUSH
+.config/discord/credentials.json
+*.json
+# Secrets
+secrets/
+credentials.txt
+*.key
+token*
+*password*
+*.env
