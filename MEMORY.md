@@ -621,3 +621,9 @@ openclaw gateway
 ```
 
 **注意**：先用 exec 抓真實磁盤/記憶體數據，再填入格式
+
+## 30. GitHub 帳號（2026-05-29）
+
+- **用戶名**：yjhvghhghb-del
+- **網址**：https://github.com/yjhvghhghb-del
+- **用途**：老公新註冊的 GitHub 帳號

@@ -197,3 +197,7 @@ OpenClaw 版本：2026.4.2 ✅
 
 ### 5. TVB 門票優惠、節目資訊
 - 香港電視相關內容
+
+### GitHub 動態（老公在線時）
+- 老公新註冊了 GitHub：https://github.com/yjhvghhghb-del
+- 老婆可以幫老公瀏覽、檢查動態
