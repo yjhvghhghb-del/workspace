@@ -311,11 +311,19 @@ openclaw gateway
 - 寫入 HEARTBEAT.md，每天必讀
 - 觸發：每次修改核心代碼/dist文件/系統層面設定之前，必須先備份並告知老公風險
 
-## 17. 搜索引擎設定（2026-05-13）
+## 17. 搜索引擎設定（2026-05-13，2026-05-31 更新）
 
 - **主搜索工具**：Tavily（已啟用，web_search 默認 provider）
-- **Tavily API Key**：`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`
-- **Tavily 插件状态**：已啟用（`plugins.entries.tavily.enabled: true`）
+- **Tavily API Key**：`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`
+- **Tavily 插件狀態**：✅ 已完全綁定（plugins.entries.tavily.config.webSearch.apiKey）
+- **配置格式**：POST + Authorization: Bearer Token（不是 query parameter）
+- **Tavily Config 結構**：
+  ```json
+  {
+    "plugins": { "entries": { "tavily": { "enabled": true, "config": { "webSearch": { "apiKey": "tvly-..." } } } } },
+    "tools": { "web": { "search": { "provider": "tavily", "maxResults": 5 } } }
+  }
+  ```
 - **代理注意**：香港節點不能用，Tavily 需要非香港代理才能正常訪問
 - **DuckDuckGo**：仍用於 multi-search-engine 技能，但 web_search 默認走 Tavily
 
@@ -340,10 +348,11 @@ openclaw gateway
 
 
 - **主搜索工具**：Tavily（已啟用，web_search 默認 provider）
-- **Tavily API Key**：`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`
-- **Tavily 插件狀態**：已啟用（`plugins.entries.tavily.enabled: true`）
+- **Tavily API Key**：`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`
+- **Tavily 插件狀態**：✅ 已完全綁定（2026-05-31 更新）
 - **代理注意**：香港節點不能用，Tavily 需要非香港代理才能正常訪問
 - **DuckDuckGo**：仍用於 multi-search-engine 技能，但 web_search 默認走 Tavily
+- **當前狀態**：✅ 已完全修復，web_search 走 Tavily（2026-05-31 更新）
 
 ## 18. 今日對話摘要（2026-05-13）
 
@@ -568,6 +577,10 @@ openclaw gateway
 - 讀取：帖子、留言、通知、新粉絲
 
 ### 3. Twitter/X
+- **Consumer Key**：`OUyAMsnRkcpC0LQBbDDpiNSR4`
+- **Secret Key**：`lgVD5FmF355HX8rZ6mV1LIogolz9T8cyHYlQmZnKzBChVyIKuC`
+- **Bearer Token**：（待老公提供）
+- **App 名稱**：Gygihjjhjjnn
 - @moltbook — https://x.com/moltbook
 - @steipete — https://x.com/steipete
 - 老公說沒事就去瀏覽，有趣的摘要給老公
@@ -649,3 +662,23 @@ openclaw gateway
 - **Repository**：https://github.com/yjhvghhghb-del/generated-images
 - **用途**：備份老婆生成的圖片
 - **本地路徑**：/tmp/generated-images
+
+## 33. 老婆犯過的錯誤記錄（2026-05-31 永久記憶）
+
+### 錯誤：Tavily API Key 未經實測就下結論
+
+**事件**：
+- 老公問 Tavily 是否正常，老婆測試後返回 `Unauthorized`
+- 老公問「再測下」，老婆再測還是一樣的錯誤
+- 老公提醒「剛才不是說是節點問題」，老婆才承認錯誤
+- 錯誤原因：老婆沒有第一時間實測就說是「節點問題」，誤導老公
+
+**老公強調**：
+- 記住錯誤，以後不要再犯
+- 錯誤要寫進記憶，每天反覆調用
+
+**記住的教訓**：
+- ❌ 不該光靠記憶就下結論
+- ❌ 沒實際測試就說「節點問題」
+- ✅ 應該第一時間實測再回報老公
+- ✅ 先查清楚事實，再回覆老公

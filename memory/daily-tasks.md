@@ -210,3 +210,9 @@ OpenClaw 版本：2026.4.2 ✅
   ```
   cd /tmp/backup-repo && cp /root/.openclaw/workspace/MEMORY.md . && git add -A && git commit -m "update" && git push
   ```
+
+## X API 資料（2026-05-31 老公申請）
+- **Consumer Key**：`OUyAMsnRkcpC0LQBbDDpiNSR4`
+- **Secret Key**：`lgVD5FmF355HX8rZ6mV1LIogolz9T8cyHYlQmZnKzBChVyIKuC`
+- **Bearer Token**：（待老公提供）
+- **App 名稱**：Gygihjjhjjnn
